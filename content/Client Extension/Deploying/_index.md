@@ -12,9 +12,7 @@ Once you've created your custom code and committed it to GitHub, you can now bui
 
 The **Deployment** page is not accessible by default. You must enable it in the **Corporate Office Advanced Settings**. 
 
-{{% notice info %}}
-Enable the *ViewAdvancedSettings()* permission to access the **Advanced Settings** section. Learn more about [Employee Permissions and Roles](https://help.directscale.com/hc/en-us/articles/360049588994-Assigning-Employee-Permission-Roles).
-{{% /notice %}}
+> Enable the *ViewAdvancedSettings()* permission to access the **Advanced Settings** section. Learn more about [Employee Permissions and Roles](https://help.directscale.com/hc/en-us/articles/360049588994-Assigning-Employee-Permission-Roles).
 
 To enable:
 
@@ -29,9 +27,9 @@ To enable:
     ![Platform section](https://lxteam.blob.core.windows.net/images/DevSite/ClientExtension/platform%20section.png)
 4. Click **Save Changes** at the bottom of the page.
 
-{{% notice warning %}}
-Only enable the **Deployment** page when you have Extension code ready to commit or errors may occur.
-{{% /notice %}}
+
+> Only enable the **Deployment** page when you have Extension code ready to commit or errors may occur.
+
 
 ---
 ---
@@ -51,9 +49,7 @@ In *Unified Admin*, in the **CorpAdmin** module, navigate to: **Developer** > **
 
 ## Deploying
 
-{{% notice warning %}}
-Attempting to deploy any code with errors can break vital functionality. Always first deploy to your *Stage* environment, if available.
-{{% /notice %}}
+> Attempting to deploy any code with errors can break vital functionality. Always first deploy to your *Stage* environment, if available.
 
 1. In the **Deployment** page, you may see all your previous builds from GitHub.
 

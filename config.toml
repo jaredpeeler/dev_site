@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "DirectScale Developers"
-theme = "hugo-geekdoc"
+theme = "hugo-theme-learn"
 
 # For search functionality
 [outputs]
