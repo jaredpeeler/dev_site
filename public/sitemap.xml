@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/get-started/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/payment-providers-merchants-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/client-extension/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/api-help/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/commissions-resources/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/custom-fields/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/database/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/front-end-development/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/ifthengine-and-data-point-service/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/xml-reference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2016-04-09T16:50:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/client-extension/deploying/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/client-extension/deploying/failedbuilds/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/client-extension/codeexampleservice/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,113 @@
+[
+{
+	"uri": "http://example.org/get-started/",
+	"title": "Get Started",
+	"tags": [],
+	"description": "",
+	"content": "You\u0026rsquo;ve arrived at the DirectScale Developer Site! Here, you\u0026rsquo;ll find many resources that will help you customize your Platform.\n  Back End Developers Before you start, you may need to gain access to:\n Client Extension Public API  After you\u0026rsquo;re all set up and your code is ready to go, check out how to deploy.\nMuch of the communication between your code and the Platform occurs with Hooks. You also have the Abstraction Layer, a public NuGet package that exposes many methods for you to use.\n  Front End Developers You may find the Front End Development section helpful for creating custom content. This includes:\n Get Started with Front End Development Inserting JavaScript Custom Pages, Templates, and Components Custom Widgets  You\u0026rsquo;ll most likely want to get access to the Public API, as well.\n  Compensation Plan Developers Compensation plans are complex. Whether you are new to the Direct Sales industry or creating compensation plans in XML, we\u0026rsquo;re here to help. Check out the Commission Resources section that includes:\n XML Compensation Plan Editor Tutorial: Using XML to Create a Compensation Plan Weekly Binary Compensation Plan XML Template XML Reference  If you need an overview of how commissions work in the Admins, you can view the following guides in the Help Center:\n Compensation Plans Auditing and Paying Commissions    Other Resources There are even more resources available that you may find useful:\n IfThengine Data Editor Custom Fields  "
+},
+{
+	"uri": "http://example.org/payment-providers-merchants-integration/",
+	"title": "Payment Providers (Merchants) Integration",
+	"tags": [],
+	"description": "",
+	"content": "Web Office Content Find out how to create and organize your content quickly and intuitively.\n"
+},
+{
+	"uri": "http://example.org/client-extension/",
+	"title": "Client Extension",
+	"tags": [],
+	"description": "",
+	"content": "The Client Extension is a way to expand the base DirectScale Platform functionality. It\u0026rsquo;s a template of sorts made of C# files stored in a GitHub repository. Whenever base code runs, it looks at the Extension to see if any custom code overrides or changes it. The main way this communication occurs is through Hooks.\nThe client must request access to the Extension. Find out how in the Help Center: Gaining Access to the Client Extension.\nIn the Extension, two important elements must be there:\n  A Solution named after the client key (client ID).\nThe Client ID is the same as the instance name in the Platform URL: {Client_ID}.admin.directscale.com.\n  The ExtentionEntry.cs file. The base code looks for this file when it tries to discover what type of custom code you\u0026rsquo;ve created. Register any code you write or Hooks you use in this file.\n    ConfigureServices() In ExtensionEntry.cs, the ConfigureServices() function is the entry method of the Extension. Nothing will run without anything registered within it:\npublic class ExtensionEntry : IExtension { public void ConfigureServices(IServiceCollection services) { // Include service registrations here.  } } For example, when registering an API endpoint:\npublic class ExtensionEntry : IExtension { public void ConfigureServices(IServiceCollection services) { services.AddSingleton\u0026lt;IApiEndpoint, ApiExample\u0026gt;(); } }   Assembly Versions There are two assemblies with specific, required versions:\n Microsoft.Extensions.DependencyInjection.Abstractions (Version 2.1.1) Newtonsoft.Json (Version 12.0.1)   ⚠ You must not update these packages. If you load other versions, the Extension will not work as intended.\n  The rest of the Extension can be set up and structured in your own way.\n"
+},
+{
+	"uri": "http://example.org/api-help/",
+	"title": "API Help",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/commissions-resources/",
+	"title": "Commission Resources",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/custom-fields/",
+	"title": "Custom Fields",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/database/",
+	"title": "Database",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/front-end-development/",
+	"title": "Front End Development",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/ifthengine-and-data-point-service/",
+	"title": "IfThengine and Data Point Service",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/xml-reference/",
+	"title": "XML Reference",
+	"tags": [],
+	"description": "",
+	"content": "API Basics Discover what this Hugo theme is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "http://example.org/",
+	"title": "Welcome Developers",
+	"tags": [],
+	"description": "",
+	"content": "Welcome Developers Learn theme works with a page tree structure to organize content : All contents are pages, which belong to other pages. read more about this\n Main features Contribute to this documentation Feel free to update this content, just click the Edit this page link displayed on top right of each page, and pullrequest it\nYour modification will be deployed automatically when merged.\n Documentation website This current documentation has been statically generated with Hugo with a simple command : hugo -t hugo-theme-learn \u0026ndash; source code is available here at GitHub\nAutomatically published and hosted thanks to Netlify. Read more about Automated HUGO deployments with Netlify\n "
+},
+{
+	"uri": "http://example.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/client-extension/deploying/",
+	"title": "Deploying",
+	"tags": [],
+	"description": "",
+	"content": "Once you\u0026rsquo;ve created your custom code and committed it to GitHub, you can now build and deploy.\n  Enabling the Page The Deployment page is not accessible by default. You must enable it in the Corporate Office Advanced Settings.\nEnable the ViewAdvancedSettings() permission to access the Advanced Settings section. Learn more about Employee Permissions and Roles.\n To enable:\n  In Corporate Office, navigate to: Administration \u0026gt; Advanced Settings \u0026gt; Release Toggles.\n{Client_ID}.corpadmin.directscale.com/Settings?category=Release%20Toggles\n  Locate the Platform section.\n  Select Use Separate Domain.\n  Click Save Changes at the bottom of the page.\n  Only enable the Deployment page when you have Extension code ready to commit or errors may occur.\n   Finding the Page In Corporate Office, navigate to Administration \u0026gt; Deployment.\n{client_ID}.corpadmin.directscale.com/Corporate/Admin/Deployment\nIn Unified Admin, in the CorpAdmin module, navigate to: Developer \u0026gt; Deployment.\n{client_ID}.directscale.com/#/DiscoDeployment\n  Deploying Attempting to deploy any code with errors can break vital functionality. Always first deploy to your Stage environment, if available.\n   In the Deployment page, you may see all your previous builds from GitHub.\nClick Queue New Build, to add a new build artifact.\nThis queues the build across all environments (Stage/Live).\n  Click Deploy.\nThe build only deploys to the current environment. Log into each environment and deploy manually.\nThis queues the pipeline, and your new version is ready to use.\n  The current deployed version displays at the top right of the page:\n"
+},
+{
+	"uri": "http://example.org/client-extension/deploying/failedbuilds/",
+	"title": "Failed Builds",
+	"tags": [],
+	"description": "",
+	"content": "If your deployment fails, then there were errors in your code.\nClick the Failed link to open a modal where you can view the errors.\nEach error indicates the class and line number the error occurred at. Locate the errors in your code. When committed and ready to go, you can return to the Deployment page and queue a new build.\n"
+},
+{
+	"uri": "http://example.org/client-extension/codeexampleservice/",
+	"title": "Service (Example)",
+	"tags": [],
+	"description": "",
+	"content": "using System; using System.Globalization; using System.Text.RegularExpressions; namespace integration.Services { public class ExampleService : IExampleService { public bool IsValidEmail(string email) { //See https://docs.microsoft.com/en-us/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format for more information on this function.  if (string.IsNullOrWhiteSpace(email)) return false; try { // Normalize the domain  email = Regex.Replace(email, @\u0026#34;(@)(.+)$\u0026#34;, DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200)); // Examines the domain part of the email and normalizes it.  string DomainMapper(Match match) { // Use IdnMapping class to convert Unicode domain names.  var idn = new IdnMapping(); // Pull out and process domain name (throws ArgumentException on invalid)  var domainName = idn.GetAscii(match.Groups[2].Value); return match.Groups[1].Value + domainName; } } catch (RegexMatchTimeoutException e) { return false; } catch (ArgumentException e) { return false; } try { return Regex.IsMatch(email, @\u0026#34;^(?(\u0026#34;\u0026#34;)(\u0026#34;\u0026#34;.+?(?\u0026lt;!\\\\)\u0026#34;\u0026#34;@)|(([0-9a-z]((\\.(?!\\.))|[-!#\\$%\u0026amp;\u0026#39;\\*\\+/=\\?\\^`\\{\\}\\|~\\w])*)(?\u0026lt;=[0-9a-z])@))\u0026#34; + @\u0026#34;(?(\\[)(\\[(\\d{1,3}\\.){3}\\d{1,3}\\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\\.)+[a-z0-9][\\-a-z0-9]{0,22}[a-z0-9]))$\u0026#34;, RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)); } catch (RegexMatchTimeoutException) { return false; } } public string GetValue() { return \u0026#34;From integration Example\u0026#34;; } } } namespace integration.Services { public interface IExampleService { string GetValue(); bool IsValidEmail(string email); } } "
+},
+{
+	"uri": "http://example.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

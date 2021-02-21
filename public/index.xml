@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome Developers on DirectScale Developers</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Welcome Developers on DirectScale Developers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Failed Builds</title>
+      <link>http://example.org/client-extension/deploying/failedbuilds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/client-extension/deploying/failedbuilds/</guid>
+      <description>If your deployment fails, then there were errors in your code.
+Click the Failed link to open a modal where you can view the errors.
+Each error indicates the class and line number the error occurred at. Locate the errors in your code. When committed and ready to go, you can return to the Deployment page and queue a new build.</description>
+    </item>
+    
+    <item>
+      <title>Service (Example)</title>
+      <link>http://example.org/client-extension/codeexampleservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/client-extension/codeexampleservice/</guid>
+      <description>using System; using System.Globalization; using System.Text.RegularExpressions; namespace integration.Services { public class ExampleService : IExampleService { public bool IsValidEmail(string email) { //See https://docs.microsoft.com/en-us/dotnet/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format for more information on this function.  if (string.IsNullOrWhiteSpace(email)) return false; try { // Normalize the domain  email = Regex.Replace(email, @&amp;#34;(@)(.+)$&amp;#34;, DomainMapper, RegexOptions.None, TimeSpan.FromMilliseconds(200)); // Examines the domain part of the email and normalizes it.  string DomainMapper(Match match) { // Use IdnMapping class to convert Unicode domain names.</description>
+    </item>
+    
+  </channel>
+</rss>
